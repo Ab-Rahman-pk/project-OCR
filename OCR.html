@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>English OCR</title>
+	<link rel="stylesheet" href="style.css">
+	<script src="https://cdn.rawgit.com/naptha/tesseract.js/1.0.10/dist/tesseract.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/semantic-ui-css@2.2.12/semantic.min.js"></script>
+
+</head>
+<body>
+	<!-- navbar -->
+	<div class="nevbar">
+		<div class="logo">
+			<img src="Prject Logo.png" alt="logo">
+		</div>
+		<div class="botom">
+			<a href="OCR.html">HOME</a>
+			<a href="/About Page/About.html">ABOUT</a>
+		</div>
+	</div>
+	<!-- Body -->
+	<div class="ui container">  
+		<h1 class="ui header">Image to Text</h1>
+		<div class="desc">Extract all the text from a selected image using tesseract OCR engine.</div>
+		</div>
+	  </div>
+		<div class="ui grid stackable">
+		  <div class="row">
+			
+			<div class="eight wide column">
+			  <div class="ui card">
+				<div class="content">
+				  <h2 class="header">Input</h2>
+				</div>
+				<div class="content">
+				  <img id="image" class="ui centered medium image" src="https://t4.ftcdn.net/jpg/04/81/13/43/360_F_481134373_0W4kg2yKeBRHNEklk4F9UXtGHdub3tYk.jpg"/>
+				</div>
+				<div class="content extra">
+				  <input id="file" type="file" onchange="proccess(window.lastFile=this.files[0])">  
+				</div>
+			  </div>
+			</div>
+			
+			<!-- Add this select element for language selection -->
+<div class="ui container">
+	<h1 class="ui header">Image to Text</h1>
+	<div class="desc">Extract all the text from a selected image using Tesseract OCR engine.</div>
+			<div class="eight wide column">
+			  <div class="ui card">
+				<div class="content">
+				  <h2 class="header">Output</h2>
+				</div>
+				<div class="content content-result">
+				  <div class='ui grid'>
+					<div class='row result'>
+					  <div class="column placeholder">
+						No Output <br/>
+						<span>Choose a file to start</span>    
+					  </div>
+					</div>
+				  </div>  
+				</div>
+				<div class="content extra">
+				  <h5>Powered by Muhammad Abdur Rahman</h5>
+				</div>
+			  </div>
+			</div>
+			
+		  </div>
+		</div>
+	   
+	  </div>
+
+	  <script src="Javascript.js"></script>
+
+</body>
+</html>
+
